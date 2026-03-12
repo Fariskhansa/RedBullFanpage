@@ -16,8 +16,6 @@ Proyek ini sangat menonjolkan interaktivitas pengguna melalui penggunaan animasi
 * **Grafik Statistik (Chart.js):** Visualisasi data perjalanan poin konstruktor Red Bull Racing dari tahun ke tahun menggunakan grafik garis interaktif.
 * **Popup Modal Profil:** Mengklik kartu pembalap akan meredupkan latar belakang dan memunculkan jendela popup berisi detail profil pembalap di tengah layar.
 * **Progress Bar Telemetri:** Garis merah menyala di bagian paling atas layar yang menunjukkan seberapa jauh halaman telah digulir.
-* **Efek Audio Pintar:** Suara deru mesin V10 F1 akan berbunyi secara otomatis saat pengguna melihat bagian evolusi mobil untuk pertama kalinya.
-* **Efek Mengetik (Typewriter):** Judul utama di halaman depan muncul seolah-olah sedang diketik secara langsung.
 
 ## Teknologi yang Digunakan
 
