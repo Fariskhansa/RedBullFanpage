@@ -169,3 +169,26 @@ window.addEventListener('load', function() {
     }
 });
 
+// --- FITUR BARU 5: Hamburger Menu Mobile ---
+var mobileMenu = document.getElementById('mobile-menu');
+var navLinksMenu = document.querySelector('.nav-links');
+var navItems = document.querySelectorAll('.nav-links a');
+
+if (mobileMenu) {
+    mobileMenu.addEventListener('click', function() {
+        // Menambah/menghapus kelas active untuk memunculkan menu
+        navLinksMenu.classList.toggle('active');
+        // Mengubah ikon garis menjadi tanda X
+        mobileMenu.classList.toggle('is-active');
+    });
+
+    // Menutup menu secara otomatis jika salah satu tautan diklik
+    navItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                navLinksMenu.classList.remove('active');
+                mobileMenu.classList.remove('is-active');
+            }
+        });
+    });
+}
