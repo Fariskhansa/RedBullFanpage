@@ -25,10 +25,10 @@ progressBar.style.position = 'fixed';
 progressBar.style.top = '0';
 progressBar.style.left = '0';
 progressBar.style.height = '5px';
-progressBar.style.backgroundColor = '#E10600'; // Warna Merah Red Bull
+progressBar.style.backgroundColor = '#cc1e4a'; // Warna Merah Red Bull
 progressBar.style.width = '0%';
 progressBar.style.zIndex = '9999';
-progressBar.style.boxShadow = '0 0 10px #E10600'; // Efek cahaya (glow)
+progressBar.style.boxShadow = '0 0 10px #cc1e4a'; // Efek cahaya (glow)
 document.body.appendChild(progressBar);
 
 // Logika untuk mengisi garis saat di-scroll
@@ -118,10 +118,10 @@ window.addEventListener('load', function() {
                 datasets: [{
                     label: 'Total Poin Konstruktor',
                     data: [34, 153.5, 498, 596, 187, 417, 585.5, 759, 860], // Data poin historis
-                    borderColor: '#E10600', // Warna garis merah Red Bull
+                    borderColor: '#cc1e4a', // Warna garis merah Red Bull
                     backgroundColor: 'rgba(225, 6, 0, 0.2)', // Warna isian transparan di bawah garis
                     borderWidth: 4,
-                    pointBackgroundColor: '#FFC72C', // Warna titik kuning
+                    pointBackgroundColor: '#ffc906', // Warna titik kuning
                     pointBorderColor: '#001A30',
                     pointRadius: 6,
                     pointHoverRadius: 10,
