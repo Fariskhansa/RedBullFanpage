@@ -615,3 +615,41 @@ footer {
     color: #888;
     font-size: 0.9rem;
 }
+
+/* --- GAYA UNTUK LOADING SCREEN (PRELOADER) --- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--rb-blue); /* Latar belakang utama biru tua */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999; 
+    transition: opacity 1s ease, visibility 0.8s ease;
+}
+
+.loader-logo {
+    
+    width: 250px; 
+    max-width: 80%;
+    animation: pulseLoader 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulseLoader {
+    0% { 
+        transform: scale(0.95); 
+        filter: drop-shadow(0 0 5px rgba(225, 6, 0, 0.3)); 
+    }
+    100% { 
+        transform: scale(1.05); 
+        filter: drop-shadow(0 0 20px rgba(255, 199, 44, 0.8)); 
+    }
+}
+
+.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}

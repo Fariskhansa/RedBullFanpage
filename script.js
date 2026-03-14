@@ -191,4 +191,23 @@ if (mobileMenu) {
             }
         });
     });
+
+    window.addEventListener('load', function() {
+    var preloader = document.getElementById('preloader');
+    if (preloader) {
+        // Hilangkan loading setelah semua gambar selesai dimuat (delay 0.8 detik)
+        setTimeout(function() {
+            preloader.classList.add('preloader-hidden');
+        }, 800);
+    }
+    });
+
+    // PENGAMAN (Failsafe): Paksa hilangkan loading maksimal setelah 3 detik
+    // (Berguna jika ada gambar atau koneksi internet yang nyangkut)
+    setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader && !preloader.classList.contains('preloader-hidden')) {
+            preloader.classList.add('preloader-hidden');
+        }
+    }, 3000);
 }
